@@ -6,8 +6,7 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import React, { useEffect } from "react";
-import SearchInput from "@/components/SearchInput";
+import React from "react";
 import EmptyState from "@/components/EmptyState";
 import { getUserPosts, signOut } from "@/lib/appwrite";
 import useAppWrite from "@/hooks/useAppWrite";

@@ -1,6 +1,8 @@
 import {
   Alert,
   Image,
+  KeyboardAvoidingView,
+  Platform,
   SafeAreaView,
   ScrollView,
   Text,
@@ -49,7 +51,10 @@ const SignIn = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
-        <View className="w-full justify-center px-4 min-h-[85vh] my-6">
+        <KeyboardAvoidingView
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
+          className="w-full justify-center px-4 min-h-[85vh] my-6"
+        >
           <Image
             source={images.logo}
             resizeMode="contain"
@@ -92,7 +97,7 @@ const SignIn = () => {
               Sign Up
             </Link>
           </View>
-        </View>
+        </KeyboardAvoidingView>
       </ScrollView>
     </SafeAreaView>
   );

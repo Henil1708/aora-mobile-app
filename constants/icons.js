@@ -12,6 +12,8 @@ import eyeHide from "../assets/icons/eye-hide.png";
 import eye from "../assets/icons/eye.png";
 import play from "../assets/icons/play.png";
 import refresh from "../assets/icons/refresh.png";
+import heartFilled from "../assets/icons/heart-solid.png";
+import heartOutlined from "../assets/icons/heart-outline.png";
 
 export default {
   play,
@@ -28,4 +30,6 @@ export default {
   eyeHide,
   eye,
   refresh,
+  heartOutlined,
+  heartFilled,
 };
